@@ -1,1 +1,1 @@
-# Android_App
+# Rezervim hoteli - Aplikacion ne Android
