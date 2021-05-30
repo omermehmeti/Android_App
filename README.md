@@ -1,1 +1,1 @@
-# Rezervim  Hoteli - Aplikacion ne Android
+# Doctor Appointment Booking app - Aplikacion ne Android
