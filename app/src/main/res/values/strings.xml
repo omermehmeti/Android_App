@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Doctor Appointment Booking</string>
+    <string name="tv_welcome">Welcome to Appointment!</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="no_acc">No account?Create...it!</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="create_acc">Create Account</string>
+    <string name="with_acc">Already have account?Sign In...!</string>
+    <string name="success_message">Account created successfully!</string>
+    <string name="user_not_found">User not fond!</string>
+    <string name="wrong_credentials">Wrong Credentials</string>
+    <string name="book">Book an Appointment</string>
+    <string name="find">Find</string>
+    <string name="Select_area">Select area</string>
+    <string name="search">Search doctor etc..</string>
+    <string name="date">Select Date</string>
+    <string name="searcher">Search</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="event_name">Event name</string>
+    <string name="google_map_key">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+</resources>
