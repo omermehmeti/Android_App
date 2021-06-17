@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:id="@+id/MainActivity2">
 
 
     <TextView
@@ -42,8 +43,8 @@
         android:textColorHint="#656562"
         android:drawableRight="@drawable/location"
         android:id="@+id/et_SA"
-        android:imeOptions="actionNext"
-        android:inputType="none"></EditText>
+        android:inputType="text"
+        android:imeOptions="actionNext"></EditText>
 
     <EditText
         android:layout_width="match_parent"
@@ -56,6 +57,7 @@
         android:textColorHint="#656562"
         android:drawableRight="@drawable/search"
         android:id="@+id/et_S"
+        android:inputType="text"
         android:imeOptions="actionNext"></EditText>
 
     <EditText
@@ -69,6 +71,7 @@
         android:textColorHint="#656562"
         android:drawableRight="@drawable/calendar"
         android:id="@+id/et_D"
+        android:inputType="text"
         android:imeOptions="actionDone"></EditText>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -80,5 +83,6 @@
         android:background="#DC3870"
         android:layout_margin="15dp"
         android:padding="10dp"
-        android:id="@+id/btn_search"></androidx.appcompat.widget.AppCompatButton>
+        android:id="@+id/btn_search"
+        android:onClick="btnsearch"></androidx.appcompat.widget.AppCompatButton>
 </androidx.constraintlayout.widget.ConstraintLayout>

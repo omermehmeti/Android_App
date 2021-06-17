@@ -90,7 +90,9 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
             android:backgroundTint="#3549C1"
             android:background="@drawable/signin_up"
             android:text="@string/login"
@@ -107,8 +109,22 @@
             android:textSize="20sp"
             android:layout_gravity="center"
             android:background="#EAF1F0"
-            android:layout_marginTop="5dp"
+            android:layout_margin="10dp"
             android:id="@+id/tv_create"></TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#3549C1"
+            android:background="@drawable/signin_up"
+            android:text="@string/create_acc"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/btnCreate"></androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>
     <LinearLayout
         android:gravity="bottom"

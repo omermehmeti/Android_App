@@ -52,7 +52,7 @@
                 android:paddingLeft="16dp"
                 android:padding="15dp"
                 android:background="#EAF1F0"
-                android:hint="name surnane"
+                android:hint="John Smtih"
                 android:id="@+id/et_fullname"
                 android:imeOptions="actionNext"
                 android:inputType="textCapWords"></EditText>
@@ -69,7 +69,7 @@
                 android:paddingLeft="16dp"
                 android:padding="15dp"
                 android:background="#EAF1F0"
-                android:hint="12344"
+                android:hint="e.g 55555555"
                 android:id="@+id/et_mobilenumber"
                 android:imeOptions="actionNext"
                 android:inputType="number"></EditText>
@@ -111,7 +111,10 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="32dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
             android:backgroundTint="#3549C1"
             android:background="@drawable/signin_up"
             android:text="@string/create_acc"
@@ -130,6 +133,19 @@
             android:background="#F5F8F8"
             android:layout_marginTop="-25dp"
             android:id="@+id/tv_sign1"></TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#3549C1"
+            android:background="@drawable/signin_up"
+            android:text="@string/login"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/btnlogin"></androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>
     <LinearLayout
         android:gravity="bottom"
