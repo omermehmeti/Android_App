@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="ExtraText">
+        <activity android:name=".PlacesActivity">
+
+        </activity>
         <activity
             android:name=".MainActivity0"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -30,9 +33,11 @@
             android:name=".SignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
 
+        </activity>
     </application>
 
 </manifest>

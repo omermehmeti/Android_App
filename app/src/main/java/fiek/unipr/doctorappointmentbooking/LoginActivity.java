@@ -96,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
 
             cursor.close();
             objDb.close();
-            if(password.equals(dbUserPassword) && email.equals(dbUserMail))
+            if(password.equals(dbUserPassword) && email.equals(dbUserMail) && password.length()>0 && email.length()>0)
             {
                 return 1;
             }

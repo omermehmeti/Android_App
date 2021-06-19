@@ -58,10 +58,11 @@ public class Calendar extends AppCompatActivity {
 
     }
 //    public void UpdateDatabase(View.OnClickListener view){
+//        objDb = new DatabaseHelper(Calendar.this).getWritableDatabase();
 //        ContentValues contentValues = new ContentValues();
 //        contentValues.put("Date",selectedDate);
 //        contentValues.put("Event", editText.getText().toString());
-//        objDb.update("EventCalendar",contentValues,"Event = "+,new String[]{});
+//        Cursor cursor = objDb.rawQuery("Select * from EventCalendar whe")
 //    }
 
     public void ReadDatabase(View view){

@@ -53,7 +53,7 @@ public class SignUpActivity extends AppCompatActivity {
         //Validation for password
         awesomeValidation.addValidation(this,R.id.et_password,
                 ".{8,}",R.string.invalid_password);
-        btnlogin.setOnClickListener(new View.OnClickListener() {
+          btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent loginActivity = new Intent(SignUpActivity.this,LoginActivity.class);
@@ -92,7 +92,9 @@ public class SignUpActivity extends AppCompatActivity {
                 finally {
                     objDb.close();
                 }
+
             }
+
         });
     }
 }

@@ -34,4 +34,5 @@
     <string name="invalid_email">Please Enter Valid Email</string>
     <string name="invalid_password">"Enter eight digit password "</string>
     <string name="FailedToRegister">Failed to register</string>
+    <string name="mainPlaces">Main Places to Check!</string>
 </resources>

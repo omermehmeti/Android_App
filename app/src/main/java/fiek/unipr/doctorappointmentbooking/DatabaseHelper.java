@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "DAB_DB", null, 1);
+        super(context, "DAB_DB.db", null, 1);
     }
 
     @Override
@@ -19,6 +19,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL("drop table if exists Users");
+        db.execSQL("drop table if exists EventCalendar");
     }
+
+
 }

@@ -11,9 +11,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-    Button signin,signup;
+    Button signin,signup,mainPlaces;
     ImageView main_logo;
 
     @Override
@@ -24,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
         main_logo = findViewById(R.id.main_logo);
         signin = findViewById(R.id.btn_signin);
         signup = findViewById(R.id.btn_signup);
+        mainPlaces = findViewById(R.id.mainPlaces);
+
+        mainPlaces.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent rowlayout = new Intent(MainActivity.this,PlacesActivity.class);
+                startActivity(rowlayout);
+            }
+        });
 
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
