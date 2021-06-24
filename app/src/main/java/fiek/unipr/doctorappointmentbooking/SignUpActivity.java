@@ -65,12 +65,12 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //SignUp form validation
-                if(awesomeValidation.validate()){
-                    //On succes
-                    Toast.makeText(getApplicationContext(),"Form Validate Successfuly..",Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Validation Faild",Toast.LENGTH_SHORT).show();
-                }
+//                if(awesomeValidation.validate()){
+//                    //On succes
+//                    Toast.makeText(getApplicationContext(),"Form Validate Successfuly..",Toast.LENGTH_SHORT).show();
+//                }else{
+//                    Toast.makeText(getApplicationContext(),"Validation Faild",Toast.LENGTH_SHORT).show();
+//                }
                 //Database content
                 SQLiteDatabase objDb = new DatabaseHelper(SignUpActivity.this).getWritableDatabase();
                 ContentValues contentValues = new ContentValues();

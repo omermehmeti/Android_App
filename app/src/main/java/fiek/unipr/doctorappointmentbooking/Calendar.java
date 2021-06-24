@@ -3,6 +3,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -39,6 +40,11 @@ public class Calendar extends AppCompatActivity {
             public void onClick(View v) {
                 InsertDatabase(this);
                 Toast.makeText(Calendar.this,"Eventi u ruajt me sukses!",Toast.LENGTH_LONG).show();
+                String str = editText.getText().toString();
+                Intent intent = new Intent(Calendar.this,MainActivity2.class);
+                intent.putExtra("Data",str);
+                startActivity(intent);
+
             }
         });
 //        btnupdate.setOnClickListener(new View.OnClickListener() {

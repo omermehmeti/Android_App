@@ -7,6 +7,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.Menu;
@@ -15,11 +16,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
+
+import java.lang.ref.WeakReference;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -28,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText et_email,et_password;
     Button btnlogin,btnCreate;
     AwesomeValidation awesomeValidation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         btnCreate = findViewById(R.id.btnCreate);
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
         MainActivity2 = findViewById(R.id.MainActivity2);
+
 
         //Validation for email
         awesomeValidation.addValidation(this,R.id.et_email,
@@ -56,6 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(signupActivity);
             }
         });
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,8 +86,11 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(mainActivityIntent);
                 }
             }
+
         });
     }
+
+
 
     private int LoginUser(String email, String password)
     {
@@ -131,4 +141,6 @@ public class LoginActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
 }

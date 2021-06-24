@@ -99,7 +99,8 @@
             android:textSize="26sp"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:id="@+id/btnlogin"></androidx.appcompat.widget.AppCompatButton>
+            android:id="@+id/btnlogin"
+            android:onClick="startAsyncTask"></androidx.appcompat.widget.AppCompatButton>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,7 +118,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginLeft="32dp"
             android:layout_marginRight="32dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="12dp"
             android:backgroundTint="#3549C1"
             android:background="@drawable/signin_up"
             android:text="@string/create_acc"
@@ -125,6 +126,7 @@
             android:textStyle="bold"
             android:textAllCaps="false"
             android:id="@+id/btnCreate"></androidx.appcompat.widget.AppCompatButton>
+
     </LinearLayout>
     <LinearLayout
         android:gravity="bottom"

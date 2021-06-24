@@ -20,7 +20,7 @@
     <string name="Select_area">Select area</string>
     <string name="search">Search doctor etc..</string>
     <string name="date">Select Date</string>
-    <string name="searcher">Search</string>
+    <string name="searcher">Submit</string>
     <string name="save">Save</string>
     <string name="delete">Delete</string>
     <string name="update">Update</string>
@@ -35,4 +35,21 @@
     <string name="invalid_password">"Enter eight digit password "</string>
     <string name="FailedToRegister">Failed to register</string>
     <string name="mainPlaces">Main Places to Check!</string>
+    <string name="rating">Rate Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="categories">Select Categories</string>
+
+    <string-array name="doctors">
+        <item>DR.X"</item>
+        <item>"DR.Y"</item>
+        <item>"DR.Z"</item>
+        <item>"DR.G"</item>
+        <item>"DR.W</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Orthodontist"</item>
+        <item>"Periodontist"</item>
+        <item>"Endodontist"</item>
+        <item>"Prosthodontist"</item>
+    </string-array>
 </resources>
